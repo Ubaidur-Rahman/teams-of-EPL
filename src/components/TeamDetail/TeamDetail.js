@@ -50,6 +50,7 @@ const TeamDetail = () => {
                 </div>    
                 
                 <div className="my-5 text-sm-start text-light">
+                    <h3 className="text-primary">Description: </h3>
                     <p>{strDescriptionEN}</p>
                     <br/>
                     <h3 className="text-primary">Stadium: {strStadium}, <span><small>{strStadiumLocation}</small></span></h3>
@@ -64,6 +65,7 @@ const TeamDetail = () => {
                     <div className="col-md-6">
                     <h2>Stadium</h2>
                         <img className="jersey-stadium-logo" src={strStadiumThumb} alt=""/>
+                        <p>{strStadium}, <small>{strStadiumLocation}</small></p>
                     </div>
                 </div>
 
