@@ -8,11 +8,8 @@ import "./TeamDetail.css"
 import { faFlag, faFutbol,  faMars, faSearchLocation  } from '@fortawesome/free-solid-svg-icons';
 
 
-
-
 const TeamDetail = () => {
     let {teamId} = useParams();
-
     const [team , setTeam] = useState({})
     const {strTeam, strTeamBadge, strTeamBanner,intFormedYear,strCountry,strSport, strTeamJersey, strStadiumThumb, strGender, strDescriptionEN, strStadium, strStadiumLocation, strStadiumDescription, strFacebook, strTwitter, strYoutube} = team; 
     
@@ -21,9 +18,8 @@ const TeamDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => {setTeam(data.teams[0])
-            console.log(team)
             })
-    }, [])
+    }, [teamId])
     
     return (
         <div className="detail-area">
