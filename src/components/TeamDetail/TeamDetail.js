@@ -67,8 +67,6 @@ const TeamDetail = () => {
                     </div>
                 </div>
 
-
-
                 <div className="row align-items-center social-link">
                     <div className="col-md-12 text-center p-3 bg-danger">
                         <div className="d-inline-block m-3 p-2 border border-warning bg-white rounded-circle">

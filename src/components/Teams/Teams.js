@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Teams = (props) => {
-    console.log(props.team);
     const {strTeam, strTeamBadge, strSport, idTeam } = props.team;
-
 
     return (
         <div className="col text-center">
